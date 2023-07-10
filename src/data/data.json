@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "titulo": "Pantalon River",
+        "descripcion": "Pantalon River Plate color rojo, talle 1",
+        "categoria": "pantalones",
+        "imagen": "../img/pantalon1.jpg",
+        "precio": 11500,
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "titulo": "Pantalon River",
+        "descripcion": "Pantalon River Plate color gris, talle 2",
+        "categoria": "pantalones",
+        "imagen": "../img/pantalon2.jpg",
+        "precio": 20000,
+        "stock": 20
+    },
+    {
+        "id": 3,
+        "titulo": "Pantalon River",
+        "descripcion": "Pantalon River Plate color negro, talle 3",
+        "categoria": "pantalones",
+        "imagen": "../img/pantalon3.jpg",
+        "precio": 21500,
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "titulo": "Pantalon River",
+        "descripcion": "Pantalon River Plate color gris perlado, talle 4",
+        "categoria": "pantalones",
+        "imagen": "../img/pantalon5.jpg",
+        "precio": 2700,
+        "stock": 18
+    },
+    {
+        "id": 5,
+        "titulo": "Pantalon River",
+        "descripcion": "Pantalon River Plate color rojo, talle 4.",
+        "categoria": "pantalones",
+        "imagen": "../img/pantalon6.jpg",
+        "precio": 2800,
+        "stock": 10
+    },
+    {
+        "id": 6,
+        "titulo": "Pantalon River",
+        "descripcion": "Pantalon River Plate color gris perlado, talle 1",
+        "categoria": "pantalones",
+        "imagen": "../img/pantalon7.jpg",
+        "precio": 21500,
+        "stock": 15
+    },
+    {
+        "id": 7,
+        "titulo": "Pantalon River",
+        "descripcion": "Pantalon River Plate color rojo y gris, talle 1",
+        "categoria": "pantalones",
+        "imagen": "../img/pantalon8.jpg",
+        "precio": 24500,
+        "stock": 20
+    },
+    {
+        "id": 8,
+        "titulo": "Remera River Plate",
+        "descripcion": "Remera River Plate,  talle 2",
+        "categoria": "remeras",
+        "imagen": "../img/remera1.jpg",
+        "precio": 21500,
+        "stock": 140
+    },
+    {
+        "id": 9,
+        "titulo": "Remera River Plate",
+        "descripcion": "Remera River Plate, talle 3",
+        "categoria": "remeras",
+        "imagen": "../img/remera2.jpg",
+        "precio": 30500,
+        "stock": 14
+    },
+    {
+        "id": 10,
+        "titulo": "Remera River Plate",
+        "descripcion": "Remera color negra con escudo, talle 4.",
+        "categoria": "remeras",
+        "imagen": "../img/remera3.jpg",
+        "precio": 16500,
+        "stock": 10
+    },
+    {
+        "id": 11,
+        "titulo": "Remera River Plate",
+        "descripcion": "Camiseta River Plate, talle 2.",
+        "categoria": "remeras",
+        "imagen": "../img/remera5.jpg",
+        "precio": 31500,
+        "stock": 2
+    }
+]
