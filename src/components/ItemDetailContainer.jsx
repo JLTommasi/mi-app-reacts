@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
             setItem (resp);
         })
     }, [id])
-    
+
 
     return (
         <div>
