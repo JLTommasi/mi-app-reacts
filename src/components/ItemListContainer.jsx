@@ -1,36 +1,35 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import ItemList from "./ItemList";
-import { pedirDatos } from "../helpers/pedirDatos"
 import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where  } from "firebase/firestore";
+import { database } from "../firebase/data";
 
 
 const ItemListContainer = () => {
 
-    const [productos, setProductos] = useState([]);
-
-    const [titulo, setTitulo] = useState("productos");
-
-    const categoria = useParams().categoria;
+        const [productos, setProductos] = useState([]);
+        const [titulo] =  useState("productos"); 
+        const categoria = useParams().categoria;
 
     useEffect(() => {
-        pedirDatos()
-        .then((resp) => {
-            if (categoria) {
-                setProductos( resp.filter((prod) => prod.categoria === categoria));
-                setTitulo(categoria);
-            } else {
-                setProductos( resp );
-                setTitulo(categoria);
-            }
-        })
-    }, [categoria]
-    )
+        const productosRef = collection(database, "productos");
+        const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
 
-    return (
+        getDocs(q)
+        .then((resp) => {
+
+        setProductos(
+        resp.docs.map((doc) => {
+            return { ...doc.data(), id: doc.id }
+            })
+        )
+    })
+
+    }, [categoria])
+        return (
         <div>
             <ItemList productos={productos} titulo={titulo} />
-        </div>
-    )
-}
+        </div>)
+};
 
 export default ItemListContainer

@@ -8,6 +8,7 @@ export const pedirDatos = () => {
     })
 }
 
+
 export const pedirItemPorId = (id) => {
     return new Promise((resolve, reject) => {
         
@@ -17,8 +18,9 @@ export const pedirItemPorId = (id) => {
             resolve(item);
         } else {
             reject({
-                error: "En este momento no contamos con stock"
+                error: "No se encontró el producto"
             })
         }
+
     })
 }
